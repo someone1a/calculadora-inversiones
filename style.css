@@ -8,6 +8,7 @@ body{
 }
 .form{
     margin: 0 auto;
+    margin-top: 250px;
     border: solid 2px;
     animation: border 5s infinite alternate linear;
     width: 650px;
