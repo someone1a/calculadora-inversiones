@@ -28,16 +28,15 @@ body{
     0%{
         border-color: white;
     }
-    25%{
-        border-color: red;
+    20%{
+        border-color: #FEE440;
     }
-    50%{
-        border-color: pink;
+    40%{
+        border-color: #9B5DE5;
     }
-    75%{
-        border-color: greenyellow;
+    60%{
+        border-color: #00BBF9;
     }
-    100%{
-        border-color: yellow;
-    }
+    80%{ border-color: #F15BB5;}
+    100%{border-color: #00F5D4;}
 }
