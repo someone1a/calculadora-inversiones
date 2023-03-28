@@ -15,14 +15,13 @@ let calculate_advanced = () => {
     let app = document.getElementById("app_container")
     let p = document.getElementById("app")
     let time = document.getElementById("time").value
-    let result = 0
+    /*let result = 0
     for (let i = 0; i <= time; i++) {
         let interes = money * plazo
         result + interes
         money + interes
-    }
-    let f = money
-    p.innerHTML=`El dinero generado en ${time} meses es de ${f}`
-    console.log(`El dinero generado en ${time} meses es de ${f}`)
+    } */
+    let calculo = ((plazo / 12) * money / 100)*time
+    p.innerHTML=`El dinero generado en ${time} meses es de ${calculo}`
     app.appendChild(p)
 }
