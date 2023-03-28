@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-container{
+    text-align: center;
+}
+.form{
+    margin: 0 auto;
+    border: solid 2px;
+    animation: border 5s infinite alternate linear;
+    width: 650px;
+}
+.form button {
+    background-color: transparent;
+    border: solid 2px; 
+    animation: border 5s infinite alternate linear;
+    color: white;
+}
+.input{
+    height: 1.5rem;
+    border-radius: 10px;
+    border: solid black 1px;
+}
+@keyframes border{
+    0%{
+        border-color: white;
+    }
+    25%{
+        border-color: red;
+    }
+    50%{
+        border-color: pink;
+    }
+    75%{
+        border-color: greenyellow;
+    }
+    100%{
+        border-color: yellow;
+    }
+}
