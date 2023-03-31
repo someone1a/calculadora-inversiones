@@ -24,19 +24,15 @@ body{
     border-radius: 10px;
     border: solid black 1px;
 }
+#result  p{
+    border: solid green 1px;
+    border-radius: 10px;
+}
 @keyframes border{
-    0%{
-        border-color: white;
-    }
-    20%{
-        border-color: #FEE440;
-    }
-    40%{
-        border-color: #9B5DE5;
-    }
-    60%{
-        border-color: #00BBF9;
-    }
+    0%{border-color: white;}
+    20%{border-color: #FEE440;}
+    40%{border-color: #9B5DE5;}
+    60%{border-color: #00BBF9;}
     80%{ border-color: #F15BB5;}
     100%{border-color: #00F5D4;}
 }
