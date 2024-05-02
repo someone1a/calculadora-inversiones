@@ -1,38 +1,103 @@
-body{
-    background-color: black;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.form-container{
-    text-align: center;
+
+/* Modo claro */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #fefae0; /* Color de fondo */
+        color: #283618; /* Color del texto */
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .form {
+        background-color: #606c38; /* Color de fondo del formulario */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        color: #fefae0; /* Color de texto en el formulario */
+        width: 300px;
+    }
+
+    .input {
+        width: 100%;
+        padding: 8px;
+        margin: 6px 0;
+        border: 1px solid #fefae0; /* Color del borde del input */
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: #fefae0; /* Color de fondo del input */
+        color: #283618; /* Color de texto del input */
+    }
+
+    button {
+        background-color: #dda15e; /* Color de fondo del botón */
+        color: #fefae0; /* Color de texto del botón */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #bc6c25; /* Color de fondo del botón al pasar el cursor */
+    }
 }
-.form{
-    margin: 0 auto;
-    margin-top: 250px;
-    border: solid 2px;
-    animation: border 5s infinite alternate linear;
-    width: 650px;
-}
-.form button {
-    background-color: transparent;
-    border: solid 2px; 
-    animation: border 5s infinite alternate linear;
-    color: white;
-}
-.input{
-    height: 1.5rem;
-    border-radius: 10px;
-    border: solid black 1px;
-}
-#result  p{
-    border: solid green 1px;
-    border-radius: 10px;
-}
-@keyframes border{
-    0%{border-color: white;}
-    20%{border-color: #FEE440;}
-    40%{border-color: #9B5DE5;}
-    60%{border-color: #00BBF9;}
-    80%{ border-color: #F15BB5;}
-    100%{border-color: #00F5D4;}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #434441; /* Color de fondo en modo oscuro */
+        color: #fefae0; /* Color del texto en modo oscuro */
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .form {
+        background-color: #777572; /* Color de fondo del formulario en modo oscuro */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        color: #fefae0; /* Color de texto en el formulario en modo oscuro */
+        width: 300px;
+    }
+
+    .input {
+        width: 100%;
+        padding: 8px;
+        margin: 6px 0;
+        border: 1px solid #434441; /* Color del borde del input en modo oscuro */
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: #58534d; /* Color de fondo del input en modo oscuro */
+        color: #fefae0; /* Color de texto del input en modo oscuro */
+    }
+
+    button {
+        background-color: #5a0700; /* Color de fondo del botón en modo oscuro */
+        color: #fefae0; /* Color de texto del botón en modo oscuro */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #380000; /* Color de fondo del botón al pasar el cursor en modo oscuro */
+    }
 }
